@@ -135,8 +135,9 @@ section#contenido{
   /*Estilos para el pie de página*/
 .footer{
   /*Cambiar este valor dependiendo la página*/
-  margin-top: 68%;
+  margin-top: 78%;
   padding-top: 1%;
+  padding-bottom: 1%;
   text-align: center;
   background: linear-gradient(45deg,gray,black,lightgray);
   background-size: 400% 400%;
