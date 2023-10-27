@@ -1,0 +1,121 @@
+ /*Estilos generales*/
+ header {
+    background: linear-gradient(45deg,gray,black,lightgray);
+    background-size: 400% 400%;
+    animation: fanimado 10s ease infinite;
+    animation-delay: 0s;
+    color: var(--text-color);
+    animation-fill-mode: forwards;
+  }
+  body{
+    min-height: 80vh;
+    background: linear-gradient(45deg,gray,black,lightgray);
+    background-size: 400% 400%;
+    animation: fanimado 10s ease infinite;
+    color: var(--text-color);
+  }
+  @keyframes fanimado{
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+  }
+.contenedor{
+    width: 1200px;
+    height: 400px;
+    background: #755858;
+    margin: 80px auto;
+    display: flex;
+}
+.col{
+    height: 100%;
+    flex: 1;
+    color: #fff;
+    box-sizing: border-box;
+    padding: 25px;
+    position: relative;
+    transition: 0.6s;
+}
+.col:nth-child(1){
+    background-color:rgb(219, 173, 146) ;
+}
+.col:nth-child(2){
+    background-color:rgb(206, 100, 98) ;
+}
+.col:nth-child(3){
+    background-color:rgb(209, 150, 160) ;
+}
+.col:nth-child(4){
+    background-color:rgb(114, 182, 204) ;
+}
+h2{
+    text-align: center;
+    font-size: 22px;
+    font-weight: 600;
+}
+.descripcion{
+    max-width: 230px;
+    font-size: 12px;
+    margin: 28px 0;
+    display: none;
+    text-align: justify;
+}
+.descripcion button{
+border: 1px solid#fff;
+background: transparent;
+outline: none;
+padding: 8px 18px;
+color:#fff;
+border-radius: 30px ;
+margin-top: 20px;
+cursor: pointer;
+font-size: 12;
+}
+.col img{
+    width: 200px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.col:hover{
+    flex-grow: 2.5;
+}
+.col:hover .descripcion{
+display: block;
+}
+.col:hover h2{
+    text-align: left;
+}
+.btn{
+ border: 1px solid#fff;
+background: transparent;
+outline: none;
+padding: 8px 18px;
+color:#fff;
+border-radius: 30px ;
+margin-top: 20px;
+cursor: pointer;
+font-size: 12;
+}
+.paoimg{
+    width: 40%;
+    height: 250px;
+}
+.aleimg{
+  height: 200px;
+}
+.mimg{
+    height: 250px;
+    width: 300px;
+}
+.cre{
+    position: relative;
+    text-align: center;
+    margin-top: 100px;
+    color: #29fd53;
+}

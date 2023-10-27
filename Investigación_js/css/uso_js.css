@@ -1,0 +1,121 @@
+  /*Estilos generales*/
+  header {
+    background: linear-gradient(45deg,gray,black,lightgray);
+    background-size: 400% 400%;
+    animation: fanimado 10s ease infinite;
+    animation-delay: 0s;
+    color: var(--text-color);
+    animation-fill-mode: forwards;
+}
+  h1{
+    color: #29fd53;
+    font-size: 1.7em;
+    margin: 0 0 10px 0;
+}
+p{
+    font-size: 1em;
+    line-height: 1.7em;
+    padding: 0 0 10px 0;
+    font-family: 'Poppins';
+    font-weight: 300;
+}
+  /*Estilos para cada encabezado*/
+#titulos{
+    text-align: center;
+    transition: 2s ease;
+  }
+#titulos:hover{
+    transform: scale(1.2);
+    transition: 2s ease;
+    cursor: pointer;
+}
+main{
+    padding-top: 100px;
+    padding-left: 20%;
+}
+    /*Estilos para el contenido*/
+section#contenido{
+    margin-bottom: 30px;
+    padding-left: 20px;
+    width: 920px;
+    height: 1290px;
+    background: linear-gradient(100deg, rgba(255, 255, 255, 0),rgba(255,255,255,0));
+    backdrop-filter: blur (10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+.parrafos{
+    padding-right: 5%;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0),rgba(255,255,255,0));
+    backdrop-filter: blur (10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 20px;
+    margin-right: 2%;
+    border-radius: 20px;
+    text-align: justify;
+    cursor: pointer;
+    transition: 2s;
+    color: #ffffff;
+  }
+.parrafos:hover{
+    transform: scale(1.03);
+    transition: 2s;
+  }
+    /*Estilos animar la imagen*/
+  img{
+    width: 450px;
+    border-radius: 20px;
+    box-shadow: 3px 5px 5px rgb(0, 0, 0);
+  }
+img{
+    animation: zoom 5s infinite;
+  }
+  @keyframes zoom {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.06);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+      /*Estilos para la tabla*/
+table{
+  font-family: 'Poppins';
+  font-weight: 300;
+  background-color: #283e3e;
+  text-align: justify;
+  width: 100%;
+  border-collapse: collapse;
+}
+th,td{
+  border: solid 1px rgb(255, 255, 255);
+  padding: 20px;
+}
+td{
+  transition: 1.5s;
+}
+td:hover{
+  background-color: rgba(191, 255, 0, 0.317);
+  transition: 1.5s;
+}
+    /*Estilos para el pie de página*/
+.footer{
+  margin-top: 10%;
+  padding-top: 1%;
+  text-align: center;
+  background: linear-gradient(45deg,gray,black,lightgray);
+  background-size: 400% 400%;
+  animation: fanimado 10s ease infinite;
+  animation-delay: 0s;
+  color: var(--text-color);
+  animation-fill-mode: forwards;
+}
+.footer strong{
+  transition: 1.5s;
+}
+.footer strong:hover{
+  background-color: #29fd5327;
+  transition: 1.5s;
+}

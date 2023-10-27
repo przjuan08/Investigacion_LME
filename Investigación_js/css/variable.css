@@ -1,0 +1,154 @@
+ /*Estilos generales*/
+ header {
+  background: linear-gradient(45deg,gray,black,lightgray);
+  background-size: 400% 400%;
+  animation: fanimado 10s ease infinite;
+  animation-delay: 0s;
+  color: var(--text-color);
+  animation-fill-mode: forwards;
+}
+body{
+  min-height: 100vh;
+  background: linear-gradient(45deg,gray,black,lightgray);
+  background-size: 400% 400%;
+  animation: fanimado 10s ease infinite;
+  color: var(--text-color);
+}
+@keyframes fanimado{
+  0%{
+      background-position: 0% 50%;
+  }
+  50%{
+      background-position: 100% 50%;
+  }
+  100%{
+      background-position: 0% 50%;
+  }
+}
+main{
+  padding-top: 100px;
+  padding-left: 20%;
+}
+  /*Estilos para el contenido*/
+section#contenido{
+  margin-bottom: 30px;
+  padding-left: 20px;
+  width: 920px;
+  height: 1290px;
+  background: linear-gradient(100deg, rgba(255, 255, 255, 0),rgba(255,255,255,0));
+  backdrop-filter: blur (10px);
+  -webkit-backdrop-filter: blur(10px);
+  font-family: 'Poppins';
+  font-weight: 300;
+}
+  h1{
+    text-align: center;
+    margin-top: 10px;
+    font-family: 'Poppins';
+    font-size: 40px;
+    color: #29fd53;
+  }
+  h2{
+    font-family: 'Poppins', sans-serif;
+    color: rgb(255, 255, 255);
+  }
+  .hdos{
+    background: linear-gradient(135deg, rgb(24, 52, 69),rgba(255,255,255,0));
+    backdrop-filter: blur (10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(64, 36, 36, 0.20);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    padding: 20px;
+    margin-right: 40%;
+    border-radius: 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: 5s;
+  }
+  .hdos:hover{
+    transform: scale(1.1);
+    transition: 5s;
+  }
+  p{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 17px;
+    text-align: justify;
+  }
+  .ejemplo1{
+    margin-top: 11.5%;
+    width: 40%;
+    float: right;
+    border-radius: 10px;
+    margin-left: 10px;
+    box-shadow: 3px 5px 5px rgba(3, 32, 51, 0.8);
+  }
+ 
+  .ejemplo2{
+    width: 25%;
+    margin-left:35%;
+    border-radius: 10px;
+    box-shadow: 3px 5px 5px rgba(3, 32, 51, 0.8);
+  }
+  .modP{
+   text-align: right;
+   margin-right: 5%;
+  }
+  .tipos{
+    font-family: 'Poppins';
+    text-align: center;
+    font-size: 35px;
+    color: #29fd53;
+  }
+
+  table{
+    background-color: #283e3e;
+    text-align: justify;
+    width: 100%;
+    border-collapse: collapse;
+  }
+  th,td{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    border: solid 1px black;
+    padding: 20px;
+  }
+  thead{
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(90, 154, 170);
+    border-bottom: solid 1px;
+    border-right: solid 1px;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    text-align: center;
+  }
+  tr:hover td{
+    background-color: rgba(191, 255, 0, 0.317);
+  }
+  td{
+  transition: 1.5s;
+  }
+  td:hover{
+    background-color: #29fd5327;
+    transition: 1.5s;
+  }
+  /*Estilos para el pie de página*/
+.footer{
+  /*Cambiar este valor dependiendo la página*/
+  margin-top: 68%;
+  padding-top: 1%;
+  text-align: center;
+  background: linear-gradient(45deg,gray,black,lightgray);
+  background-size: 400% 400%;
+  animation: fanimado 10s ease infinite;
+  animation-delay: 0s;
+  color: var(--text-color);
+  animation-fill-mode: forwards;
+}
+.footer strong{
+  transition: 1.5s;
+}
+.footer strong:hover{
+  background-color: #29fd5327;
+  transition: 1.5s;
+}

@@ -1,0 +1,159 @@
+/*Reglas generales*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+:root{
+    --bg-color: #222327;
+    --text-color: #fff;
+    --main-color: #29fd53;
+}
+body{
+    min-height: 100vh;
+    background: linear-gradient(45deg,gray,black,lightgray);
+    background-size:400% 400%;
+    animation: fanimado 10s ease infinite;    
+    color: var(--text-color);
+}
+@keyframes fanimado {
+    0%{
+background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+   }
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    padding: 18px 12%;
+    transition: all .50 ease;
+    background: linear-gradient(45deg,gray,black,lightgray);
+    background-size: 400% 400%;
+    animation: fanimado 10s ease infinite;
+    animation-delay: 0s;
+    color: var(--text-color);
+    animation-fill-mode: forwards;  
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo i{
+    color: var(--main-color);
+    font-size: 28px;
+    margin-right: 3px;
+}
+.logo span{
+    color: var(--text-color);
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+.navbar{
+    display: flex;
+}
+.navbar a{
+    color: var(--text-color);
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding:  5px 0;
+    margin: 0px 30px;
+    transition: all .50s ease;
+}
+.navbar a:hover{
+    color: var(--main-color);
+}
+.navbar a.active{
+    color: var(--main-color);
+}
+.main a.active{
+    color: var(--main-color);
+}
+.main{
+    display: flex;
+    align-items: center;
+}
+.main a{
+    margin-top: 10px;
+    margin-right: 25px;
+    margin-left: 10px;
+    margin-bottom: -10px;
+    color: var(--text-color);
+    font-size: 1.2rem;
+    font-weight: 500;
+    transition: all .50s ease;
+}
+.main a:hover{
+    color: var(--main-color);
+}
+.calculator i{
+    color: var(--main-color);
+    font-size: 28px;
+    margin-right: 7px;
+}
+#menu-icon{
+    font-size: 35px;
+    color: var(--text-color);
+    cursor: pointer;
+    z-index: 10001;
+    display: none;
+}
+/*Reglas CSS para hacer responsivo el menú*/
+@media (max-width: 1280px){
+    header{
+        padding: 14px 2%;
+        transition: .2s;
+    }
+    .navbar a{
+        padding: 5px 0;
+        margin: 0px 20px;
+    }
+}
+@media (max-width: 969px){
+    #menu-icon{
+        display: block;
+    }
+    .navbar{
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        width: 270px;
+        height: 29vh;
+        background: var(--main-color);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        border-radius: 10px;
+        transition: all .50s ease;
+    }
+    .navbar a{
+        display: block;
+        margin: 12px 0;
+        padding: 0px 25px;
+        transition: all .50s ease;
+    }
+    .navbar a:hover{
+        color: var(--text-color);
+        transform: translateY(5px);
+    }
+    .navbar a.active{
+        color: var(--text-color);   
+    }
+    .navbar.open{
+        right: 2%;
+    }
+}
