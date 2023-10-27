@@ -76,7 +76,7 @@ img {
 /*Estilos para el pie de página*/
 .footer{
   /*Cambiar este valor dependiendo la página*/
-  margin-top: 255%;
+  margin-top: 284%;
   padding-top: 1%;
   text-align: center;
   background: linear-gradient(45deg,gray,black,lightgray);
