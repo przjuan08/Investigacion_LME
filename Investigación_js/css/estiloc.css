@@ -132,6 +132,7 @@ header{
     background: transparent;
     padding: 28px 12%;
     transition: all .50 ease;
+    background-color: black;
 }
 .logo{
     display: flex;
