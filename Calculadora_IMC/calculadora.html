@@ -4,15 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora de IMC</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&family=Oswald:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/calcula.css">
-    <link rel="shortcut icon" href="../Investigación_js/img/calculator_icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/responsive_nvar.css">
+    <link rel="shortcut icon" href="img/calculator_icon.png" type="image/x-icon">
 </head>
-
 <body>
-    <h1>Calculadora de IMC: Indice de masa corporal</h1>
+    <header>
+        <a class="logo"><i class='bx bxs-home-heart'></i></a>
+        <ul class="navbar">
+            <li><a href="../Investigación_js/que_es_js.html">¿Qué es Js?</a></li>
+            <li><a href="../Investigación_js/uso_de_js.html">Uso de Js</a></li>
+            <li><a href="../Investigación_js/variables_js.html">Variables Js</a></li>
+            <li><a href="../Investigación_js/creadores.html">Creadores</a></li>
+        </ul>
+        <div class="main">
+            <a href="calculadora.html" class="active" class="calculator"><i class='bx bxs-calculator'></i>Calculadora Js</a>
+            <div class="bx bx-menu" id="menu-icon"></div><br>
+        </div>
+    </header>
+    <!--js link--->
+    <script type="text/javascript" src="js/responsive_nvar.js"></script>
+
+    <h1>Calculadora de IMC: Índice de masa corporal</h1>
     <h2>Ingrese el peso</h2>
         <input type="number" id="kg" placeholder="Peso (KG)">
     <h2>Ingrese su Altura</h2>
@@ -54,11 +72,16 @@
                 <td>Obesidad Severa</td>
             </tr>
             <tr id="ObesidadM">
-                <td>40- o mas</td>
+                <td>40- o más</td>
                 <td>Obesidad Morbida</td>
             </tr>
         </table>
-    <script src="js/Calculado.js">
-</script>
+    <script src="js/Calculado.js"></script>
+        <!--Pie de página-->
+        <footer>
+            <div>
+                <p class="footer">Derechos Reservados - 2023<br>Página creada por <strong>César Alejandro Avendaño Guevara</strong></p>
+            </div>
+        </footer>
 </body>
 </html>
