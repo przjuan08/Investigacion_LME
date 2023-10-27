@@ -1,0 +1,139 @@
+header {
+    background: linear-gradient(45deg,gray,black,lightgray);
+    background-size: 400% 400%;
+    animation: fanimado 10s ease infinite;
+    animation-delay: 0s;
+    color: var(--text-color);
+    animation-fill-mode: forwards;
+  }
+/*Tabla estilos normales*/
+table{
+    border-spacing: 0;
+    border-radius: 5px;
+    vertical-align: top;
+    border: 1px solid #000;
+}
+#tableP{
+    text-align: center;
+}
+h1{
+    text-align: center;
+    color: #29fd53;
+}
+#kg, #m{
+    border-radius: 10px;
+    padding-left: 10px;
+}
+/*Estilo de letra anclado a googles fonts*/
+body{
+    margin-top: 100px;
+    text-align: center;
+    font-family: 'Poppins';
+}
+table{
+    margin-left: 279px;
+}
+div{
+    margin-left: 0px;
+    padding-bottom: 20px;
+}
+/*Estilo de botones*/
+button{
+ background: black;
+ cursor: pointer;
+ border: none;
+ padding: 16px 32px;
+ color: #FFF;
+ font-size: 24px;
+ font-weight: bold;
+ position: relative;
+ border-radius: 12px;
+}
+/*botton por atrás*/
+button::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        45deg,
+        red,blue,deeppink,blue,
+        red,blue,deeppink,blue
+    );
+    background-size: 800%;
+    border-radius: 10px;
+    filter: blur(8px);
+    animation: glowing 20s linear infinite;
+}
+/*Animacion glowing*/
+@keyframes glowing{
+    0%{
+        background-position: 0 0;
+    }
+    50%{
+        background-position: 400% 0;
+    }
+    100%{
+        background-position: 0 0;
+    }
+}
+/* Estilo de la tabla */
+.tabla {
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+/* Estilo de las celdas de encabezado (th) */
+.tabla th {
+    background-color: #141618;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+/* Estilo de las celdas de datos (td) */
+.tabla td {
+    border: 1px solid #ccc;
+    padding: 8px;
+}
+/* Estilo de filas alternas para mayor legibilidad */
+.tabla tr:nth-child(even) {
+    background-color: #283e3e;
+}
+/* Estilo cuando se pasa el mouse sobre las filas */
+.tabla tr{
+    transition: .5s;
+}
+.tabla tr:hover {
+    background-color: #7b8d99;
+    color: white;
+    cursor: pointer;
+    transition: .5s;
+}
+/*Estilos para el pie de página*/
+.footer{
+    /*Cambiar este valor dependiendo la página*/
+    margin-bottom: -100px;
+    margin-top: 70px;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    text-align: center;
+    background: linear-gradient(45deg,gray,black,lightgray);
+    background-size: 400% 400%;
+    animation: fanimado 10s ease infinite;
+    animation-delay: 0s;
+    color: var(--text-color);
+    animation-fill-mode: forwards;
+  }
+  .footer strong{
+    transition: 1.5s;
+  }
+  .footer strong:hover{
+    background-color: #29fd5327;
+    transition: 1.5s;
+  }
