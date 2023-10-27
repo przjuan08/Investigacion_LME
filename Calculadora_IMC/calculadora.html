@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de IMC</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&family=Oswald:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/calcula.css">
+    <link rel="shortcut icon" href="../Investigación_js/img/calculator_icon.png" type="image/x-icon">
+</head>
+
+<body>
+    <h1>Calculadora de IMC: Indice de masa corporal</h1>
+    <h2>Ingrese el peso</h2>
+        <input type="number" id="kg" placeholder="Peso (KG)">
+    <h2>Ingrese su Altura</h2>
+    <div>
+        <input type="text" id="m" placeholder="Altura (Metros)">
+    </div>
+        <button class="boton" id="calc">Calcular</button>
+
+    <h3>IMC: <span id="imc"></span></h3>
+    <h3>Usted tiene: <span id="lectura"></span></h3>
+    
+        <table border width="55%" heigth="450px" id="tableP" class="tabla" >
+            <tr align="center" id="Inicio">
+                <th>Índice de masa corporal</th>
+                <th>Rango</th>
+            </tr>
+            <tr id="15oM">
+                <td>15 o Menos</td>
+                <td>Delgadez muy Severa</td>
+                </tr>
+                <tr id="DelgadezS">
+                    <td>15 -15,9</td>
+                    <td>Delgadez Severa</td>
+                    <tr id="Delgadez">
+                        <td>16 - 18,4 0 menos</td>
+                        <td>Delgadez</td>
+                    </tr>
+                </tr>   
+                <tr id="pesoS">
+                <td>18,5 -24,9</td>
+                <td>Peso Saludable</td>
+            </tr>
+            <tr id="Sobrepeso">
+                <td>25-29,9</td>
+                <td>Sobrepeso</td>
+            </tr>
+            <tr id="ObesidadS">
+                <td>30-39,9</td>
+                <td>Obesidad Severa</td>
+            </tr>
+            <tr id="ObesidadM">
+                <td>40- o mas</td>
+                <td>Obesidad Morbida</td>
+            </tr>
+        </table>
+    <script src="js/Calculado.js">
+</script>
+</body>
+</html>
