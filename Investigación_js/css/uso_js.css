@@ -102,7 +102,7 @@ td:hover{
 }
     /*Estilos para el pie de página*/
 .footer{
-  margin-top: 10%;
+  margin-top: 15%;
   padding-top: 1%;
   text-align: center;
   background: linear-gradient(45deg,gray,black,lightgray);
